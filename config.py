@@ -13,11 +13,11 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    MAIL_SERVER = 'smtp.googlemail.com'
-    MAIL_PORT = 587
-    MAIL_USE_TLS =True
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORDD = os.environ.get('MAIL_PASSWORD')
+    MAIL_SERVER = 'smtp.kingorient.com'
+    MAIL_PORT = 25
+    MAIL_USE_TLS =False 
+    MAIL_USERNAME = 'zabbix@kingorient.com'
+    MAIL_PASSWORDD = 'Ha123456'
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:happyboy@localhost/flask_study'
 
 class TestingConfig(Config):

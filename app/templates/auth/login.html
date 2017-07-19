@@ -1,5 +1,5 @@
-{% extend "base.html" %}
-{% import "bootstartp/wtf.html as wtf %}
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 {% block title %} Flask-login {% endblock %}
 
 {% block page_content %}
@@ -7,7 +7,7 @@
     <u1>Login</h1>
 </div>
 <div class="col-md-4">
-    {{ wtf.quick_form(from) }}
-</div>
+    {{ wtf.quick_form(form) }}
+</div> 
 {% endblock %}
 
